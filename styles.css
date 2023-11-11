@@ -82,13 +82,21 @@ transition: max-height 1s;
         transform: translateX(0);
     }
 }
-@media screen and (max-width: 600px) {
-    body {
-      padding: 10px;
+/* Media Query for smaller screens */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 80%;
     }
-  }
-  @media screen and (max-width: 400px) {
-    body {
-      font-size: 14px;
+
+    .container p {
+        font-size: 14px;
     }
-  }
+
+    .container input {
+        height: 40px;
+    }
+
+    .container button {
+        height: 40px;
+    }
+}
